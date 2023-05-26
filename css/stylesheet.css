@@ -283,6 +283,12 @@ footer a:hover{
   .review-pinned{
     padding: 60px 0 0;
   }
+  .real-story{
+    padding: 60px 20px;
+  }
+  .real-story .row .story{
+    padding: 0px 20px;
+  }
   footer{
     border-radius: 0;
   }
