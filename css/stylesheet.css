@@ -274,6 +274,9 @@ footer a:hover{
   .reviews .row{
     margin: 0;
   }
+  .reviews .row_1 p{
+    min-height: 100px;
+  }
   .reviews .row_1 .col-md-6, .reviews .row_2 .col-md-6{
     margin: 10px 0;
   }
