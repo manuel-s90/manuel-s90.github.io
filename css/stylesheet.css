@@ -10,13 +10,6 @@
   background-color: #E8E8E8;
   --bs-navbar-padding-y: 0.75rem;
 }
-.navbar-collapse{
-    text-align: center;
-    padding: 20px;
-}
-.navbar-collapse a{
-  font-size: 18px!important;
-}
 .navbar-brand {
   font-family: 'Alice', sans-serif;
   font-size: 18px !important;
@@ -26,7 +19,7 @@
 .nav-link{
   font-family: 'pptelegraf', sans-serif;
   padding: 4px 12px !important;
-  font-size: 16px !important;
+  font-size: 14px !important;
   text-transform: uppercase;
   color: #2A3F77 !important;
   border: 1px solid transparent!important;
@@ -55,9 +48,6 @@ a.get-it-now {
   font-weight: 700;
   text-transform: uppercase;
 }
-
-
-
 a.get-it-now .icon {
   display: inline-block;
   vertical-align: middle;
@@ -263,6 +253,13 @@ footer a:hover{
   }
 }
 @media only screen and (max-width: 992px){
+  .navbar-collapse{
+      text-align: center;
+      padding: 20px;
+  }
+  .navbar-collapse a{
+    font-size: 18px!important;
+  }
   a.get-it-now {
     font-size: 1rem;
     padding: 10px 24px;
