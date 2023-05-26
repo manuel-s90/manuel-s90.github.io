@@ -55,6 +55,9 @@ a.get-it-now {
   font-weight: 700;
   text-transform: uppercase;
 }
+
+
+
 a.get-it-now .icon {
   display: inline-block;
   vertical-align: middle;
@@ -105,11 +108,6 @@ a.get-it-now:hover::before {
   margin: 0 auto;
   background-color: #2A3F77;
 }
-@media only screen and (min-width: 1400px){
-  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-      max-width: 1200px !important;
-  }
-}
 .container-fluid{
   max-width: 1200px;
 }
@@ -117,14 +115,6 @@ a.get-it-now:hover::before {
   align-items: center !important;
   padding-top: 20px !important;
   padding-bottom: 40px !important;
-}
-@media only screen and (max-width: 992px){
-  .hero-section{
-    flex-direction: column-reverse!important;
-  }
-  .hero-section .col{
-    margin: 10px 0;
-  }
 }
 .synopsis{
   font-family: 'Roboto', sans-serif;
@@ -264,8 +254,51 @@ footer a:hover{
   margin-bottom: 20px;
 }
 .footer-closure .align-right p{
-  text-align: right !important;
+  text-align: right;
 }
+/*MEDIA QUERIES FOR MOBILE*/
+@media only screen and (min-width: 1400px){
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+      max-width: 1200px !important;
+  }
+}
+@media only screen and (max-width: 992px){
+  a.get-it-now {
+    font-size: 1rem;
+    padding: 10px 24px;
+    border-radius: 25px;
+  }
+  .hero-section{
+    flex-direction: column-reverse!important;
+  }
+  .hero-section .col{
+    margin: 10px 0;
+  }
+  .reviews .row{
+    margin: 0;
+  }
+  .reviews .row_1 .col-md-6, .reviews .row_2 .col-md-6{
+    margin: 10px 0;
+  }
+  .review-pinned{
+    padding: 60px 0 0;
+  }
+  footer{
+    border-radius: 0;
+  }
+  .footer-closure{
+    padding: 12px 0px;
+  }
+  .footer-closure .col-md-6 p{
+    text-align: center;
+    margin-bottom: 4px;
+  }
+  .footer-closure .align-right p{
+    text-align: center;
+    margin-bottom: 4px;
+  }
+}
+
 /*BOOK ANIMATION HOVER*/
 html, body{
   background-color: white !important;
