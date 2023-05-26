@@ -10,6 +10,13 @@
   background-color: #E8E8E8;
   --bs-navbar-padding-y: 0.75rem;
 }
+.navbar-collapse{
+    text-align: center;
+    padding: 20px;
+}
+.navbar-collapse a{
+  font-size: 18px!important;
+}
 .navbar-brand {
   font-family: 'Alice', sans-serif;
   font-size: 18px !important;
@@ -110,6 +117,14 @@ a.get-it-now:hover::before {
   align-items: center !important;
   padding-top: 20px !important;
   padding-bottom: 40px !important;
+}
+@media only screen and (max-width: 992px){
+  .hero-section{
+    flex-direction: column-reverse!important;
+  }
+  .hero-section .col{
+    margin: 10px 0;
+  }
 }
 .synopsis{
   font-family: 'Roboto', sans-serif;
@@ -250,12 +265,6 @@ footer a:hover{
 }
 .footer-closure .align-right p{
   text-align: right !important;
-}
-/*MEDIA QUERIES IPHONE*/
-@media only screen and (max-width: 415px) {
-  .row{
-    flex-wrap: wrap-reverse!important;
-  }
 }
 /*BOOK ANIMATION HOVER*/
 html, body{
