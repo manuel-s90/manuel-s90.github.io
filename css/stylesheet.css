@@ -18,7 +18,7 @@
 }
 .nav-link{
   font-family: 'pptelegraf', sans-serif;
-  padding: 4px 12px !important;
+  padding: 4px 8px !important;
   font-size: 14px !important;
   text-transform: uppercase;
   color: #2A3F77 !important;
@@ -29,6 +29,7 @@
 }
 .cta-link{
   border: 1px solid #2A3F77!important;
+  margin-left: 6px;
 }
 .cta-link:hover{
   border: 1px solid darkgray!important;
