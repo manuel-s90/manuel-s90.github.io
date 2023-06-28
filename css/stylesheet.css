@@ -238,7 +238,11 @@ h1{
 }
 .tags{
   display: flex;
+  flex-wrap: wrap!important;
   align-items: center;
+}
+.tags:nth-child(n){
+  margin-bottom: 10px;
 }
 .tags .tag-item{
   font-size: 14px;
@@ -340,20 +344,24 @@ footer a:hover{
       max-width: 1200px !important;
   }
 }
-@media only screen and (max-width: 768px){
-/* UPCOMING EVENTS */
-  .col-md-8{
-    padding-right: 25px!important;
-    padding-left: 25px!important;
-  }
-  .events-wrapper .col-md-4, .col-md-8{
-    margin-bottom: 20px;
-  }
+@media only screen and (max-width: 1200px){
+  /*.events-wrapper{
+    flex-direction: column!important;
+  }*/
   .col-md-4 .event-card h3 {
-    margin-top: 0px;
+    margin-top: 20px;
+  }
+  .tags .tag-link {
+    margin-bottom: 10px;
+  }
+  .tags .tag-item{
+    margin-bottom: 10px;
+  }
+  .col-md-8 .event-card {
+    height: 100%;
+    padding: 20px;
   }
 }
-
 @media only screen and (max-width: 992px){
   .navbar-collapse{
       text-align: center;
@@ -404,6 +412,19 @@ footer a:hover{
   .footer-closure .align-right p{
     text-align: center;
     margin-bottom: 4px;
+  }
+}
+@media only screen and (max-width: 768px){
+/* UPCOMING EVENTS */
+  .col-md-8{
+    padding-right: 25px!important;
+    padding-left: 25px!important;
+  }
+  .events-wrapper .col-md-4, .col-md-8{
+    margin-bottom: 20px;
+  }
+  .col-md-4 .event-card h3 {
+    margin-top: 0px;
   }
 }
 
