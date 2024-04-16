@@ -197,6 +197,49 @@ h1{
   text-align: center;
   color: #203877;
 }
+.carousel-item .d-flex {
+  display: flex;
+  justify-content: space-around; /* Distribuye el espacio alrededor de las tarjetas */
+  width: 100%; /* Ajusta el ancho del contenedor para adaptarse a las tarjetas */
+  transition: transform 0.5s ease;
+}
+.card.mb-3 {
+  flex: 0 0 calc(50% - 30px); /* Ajusta el ancho de cada tarjeta para que dos tarjetas se ajusten dentro del carrusel, considerando el espacio */
+  margin: 0 15px; /* Asegura que haya un espacio alrededor de las tarjetas */
+}
+#eventsCarousel {
+  position: relative;
+}
+#eventsCarousel .carousel-control-prev,
+#eventsCarousel .carousel-control-next {
+  position: absolute;
+  top: 50%; /* Centra las flechas verticalmente */
+  transform: translateY(-50%); /* Asegura un centrado preciso */
+  width: auto; /* Permite ajustar el tamaño si es necesario */
+  height: auto; /* Permite ajustar el tamaño si es necesario */
+}
+#eventsCarousel .carousel-control-prev {
+  left: -50px; /* Ajusta según sea necesario para mover la flecha fuera del carrusel a la izquierda */
+}
+#eventsCarousel .carousel-control-next {
+  right: -50px; /* Ajusta según sea necesario para mover la flecha fuera del carrusel a la derecha */
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1); /* Cambia las flechas a negro, ajuste previo */
+}
+.btn-custom {
+  background-color: #007bff; /* Color de fondo */
+  color: white; /* Color del texto */
+  border: none; /* Elimina el borde */
+  padding: 10px 20px; /* Añade padding */
+  margin-top: 15px; /* Espacio por encima del botón */
+  border-radius: 5px; /* Redondea las esquinas */
+}
+.btn-custom:hover {
+  background-color: #0056b3; /* Color de fondo al pasar el ratón */
+  color: #fff; /* Color del texto al pasar el ratón */
+}
 .events-wrapper{
   margin-top: 20px;
 }
