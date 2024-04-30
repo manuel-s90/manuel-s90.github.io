@@ -541,6 +541,7 @@ footer a:hover{
   background-position: center;
 }
 /* Default background images for desktop */
+/*Family Event*/
 .carousel-item-1{
   background-image: url('../images/events/content/family-event_1.jpg');
 }
@@ -548,6 +549,16 @@ footer a:hover{
     background-image: url('../images/events/content/family-event_2.jpg');
 }
 .carousel-item-3{
+    background-image: url('../images/events/content/family-event_3.jpg');
+}
+/*Books and Books*/
+.bb-carousel-item-1{
+  background-image: url('../images/events/content/family-event_1.jpg');
+}
+.bb-carousel-item-2{
+    background-image: url('../images/events/content/family-event_2.jpg');
+}
+.bb-carousel-item-3{
     background-image: url('../images/events/content/family-event_3.jpg');
 }
 .carousel-control-prev, .carousel-control-next {
@@ -566,6 +577,12 @@ footer a:hover{
   font-size: 14px;
   color: white;
   margin-bottom: -10px;
+}
+.breadcrumbs a{
+  color: white;
+}
+.breadcrumbs a:hover{
+  color: #a0a0a0;
 }
 .blog-content{
   align-items: center;
@@ -608,6 +625,9 @@ footer a:hover{
 }
 .blog-quote mark{
   background-color: #FDF322;
+}
+.no-final{
+  padding: 0 0 20px;
 }
 .blog-content-final{
   padding-bottom: 20px;
@@ -791,6 +811,16 @@ footer a:hover{
         background-image: url('../images/events/content/m-family-event_2.jpg'); /* Mobile-specific image */
     }
     .carousel-item-3{
+        background-image: url('../images/events/content/m-family-event_3.jpg'); /* Mobile-specific image */
+    }
+
+    .bb-carousel-item-1{
+        background-image: url('../images/events/content/m-family-event_1.jpg'); /* Mobile-specific image */
+    }
+    .bb-carousel-item-2{
+        background-image: url('../images/events/content/m-family-event_2.jpg'); /* Mobile-specific image */
+    }
+    .bb-carousel-item-3{
         background-image: url('../images/events/content/m-family-event_3.jpg'); /* Mobile-specific image */
     }
 }
