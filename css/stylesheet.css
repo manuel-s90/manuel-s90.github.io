@@ -543,13 +543,13 @@ footer a:hover{
 /* Default background images for desktop */
 /*Family Event*/
 .carousel-item-1{
-  background-image: url('../images/events/content/family-event_1.jpg');
+  background-image: url('../images/events/content/family-event_3.jpg');
 }
 .carousel-item-2{
     background-image: url('../images/events/content/family-event_2.jpg');
 }
 .carousel-item-3{
-    background-image: url('../images/events/content/family-event_3.jpg');
+    background-image: url('../images/events/content/family-event_1.jpg');
 }
 /*Books and Books*/
 .bb-carousel-item-1{
@@ -560,6 +560,36 @@ footer a:hover{
 }
 .bb-carousel-item-3{
     background-image: url('../images/events/content/family-event_3.jpg');
+}
+
+.aj-carousel-item-1{
+  background-image: url('../images/events/content/un-artiste_1.jpg');;
+}
+.aj-carousel-item-2{
+  background-image: url('../images/events/content/un-artiste_2.jpg');;
+}
+.aj-carousel-item-3{
+  background-image: url('../images/events/content/un-artiste_3.jpg');;
+}
+
+.ml-carousel-item-1{
+  background-image: url('../images/events/content/mar-de-letras_1.jpg');;
+}
+.ml-carousel-item-2{
+  background-image: url('../images/events/content/mar-de-letras_2.jpg');;
+}
+.ml-carousel-item-3{
+  background-image: url('../images/events/content/mar-de-letras_3.jpg');;
+}
+
+.ba-carousel-item-1{
+  background-image: url('../images/events/content/bedford-amy_1.jpg');;
+}
+.ba-carousel-item-2{
+  background-image: url('../images/events/content/bedford-amy_2.jpg');;
+}
+.ba-carousel-item-3{
+  background-image: url('../images/events/content/bedford-amy_3.jpg');;
 }
 .carousel-control-prev, .carousel-control-next {
     width: 5%; /* Increase hit area if needed, might push arrows outside slightly */
@@ -804,6 +834,9 @@ footer a:hover{
 
 /*Media Queries for Blog*/
 @media (max-width: 768px) {
+    .blog-header{
+        padding: 0 12px;
+    }
     .carousel-item-1{
         background-image: url('../images/events/content/m-family-event_1.jpg'); /* Mobile-specific image */
     }
@@ -822,6 +855,34 @@ footer a:hover{
     }
     .bb-carousel-item-3{
         background-image: url('../images/events/content/m-family-event_3.jpg'); /* Mobile-specific image */
+    }
+
+    .aj-carousel-item-1{
+        background-image: url('../images/events/content/m-un-artiste_1.jpg');;
+    }
+    .aj-carousel-item-2{
+        background-image: url('../images/events/content/m-un-artiste_2.jpg');;
+    }
+    .aj-carousel-item-3{
+        background-image: url('../images/events/content/m-un-artiste_3.jpg');;
+    }
+    .ml-carousel-item-1{
+      background-image: url('../images/events/content/m-mar-de-letras_1.jpg');;
+    }
+    .ml-carousel-item-2{
+      background-image: url('../images/events/content/m-mar-de-letras_2.jpg');;
+    }
+    .ml-carousel-item-3{
+      background-image: url('../images/events/content/m-mar-de-letras_3.jpg');;
+    }
+    .ba-carousel-item-1{
+      background-image: url('../images/events/content/m-bedford-amy_1.jpg');;
+    }
+    .ba-carousel-item-2{
+      background-image: url('../images/events/content/m-bedford-amy_2.jpg');;
+    }
+    .ba-carousel-item-3{
+      background-image: url('../images/events/content/m-bedford-amy_3.jpg');;
     }
 }
 
