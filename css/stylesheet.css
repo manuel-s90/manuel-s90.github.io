@@ -543,23 +543,33 @@ footer a:hover{
 /* Default background images for desktop */
 /*Family Event*/
 .carousel-item-1{
-  background-image: url('../images/events/content/family-event_3.jpg');
+  background-image: url('../images/events/content/family-event_2.png');
 }
 .carousel-item-2{
-    background-image: url('../images/events/content/family-event_2.jpg');
+    background-image: url('../images/events/content/family-event_1.png');
 }
 .carousel-item-3{
-    background-image: url('../images/events/content/family-event_1.jpg');
+    background-image: url('../images/events/content/family-event_3.png');
 }
 /*Books and Books*/
 .bb-carousel-item-1{
-  background-image: url('../images/events/content/family-event_1.jpg');
+  background-image: url('../images/events/content/books-and-books_1.png');
 }
 .bb-carousel-item-2{
-    background-image: url('../images/events/content/family-event_2.jpg');
+    background-image: url('../images/events/content/books-and-books_2.png');
 }
 .bb-carousel-item-3{
-    background-image: url('../images/events/content/family-event_3.jpg');
+    background-image: url('../images/events/content/books-and-books_3.png');
+}
+
+.mr-carousel-item-1{
+    background-image: url('../images/events/content/mesa-redonda_1.png'); /* Mobile-specific image */
+}
+.mr-carousel-item-2{
+    background-image: url('../images/events/content/mesa-redonda_2.png'); /* Mobile-specific image */
+}
+.mr-carousel-item-3{
+    background-image: url('../images/events/content/mesa-redonda_3.png'); /* Mobile-specific image */
 }
 
 .aj-carousel-item-1{
@@ -819,7 +829,7 @@ footer a:hover{
   }
 }
 @media only screen and (max-width: 768px){
-/* UPCOMING EVENTS */
+  /* UPCOMING EVENTS */
   .col-md-8{
     padding-right: 25px!important;
     padding-left: 25px!important;
@@ -830,59 +840,79 @@ footer a:hover{
   .col-md-4 .event-card h3 {
     margin-top: 0px;
   }
-}
-
-/*Media Queries for Blog*/
-@media (max-width: 768px) {
+  /* BLOG */
+  .content-quote{
+    margin-bottom: 10px;
+  }
+  .blog-content {
+    padding: 40px 0 0;
+  }
+  .blog-gallery {
+    padding: 0 0 40px;
+  }
+  .blog-gallery .col-md-4{
+    margin-bottom: 20px;
+  }
+  /*Media Queries for Blog*/
     .blog-header{
         padding: 0 12px;
     }
     .carousel-item-1{
-        background-image: url('../images/events/content/m-family-event_1.jpg'); /* Mobile-specific image */
+        background-image: url('../images/events/content/m-family-event_1.png'); /* Mobile-specific image */
     }
     .carousel-item-2{
-        background-image: url('../images/events/content/m-family-event_2.jpg'); /* Mobile-specific image */
+        background-image: url('../images/events/content/m-family-event_2.png'); /* Mobile-specific image */
     }
     .carousel-item-3{
-        background-image: url('../images/events/content/m-family-event_3.jpg'); /* Mobile-specific image */
+        background-image: url('../images/events/content/m-family-event_3.png'); /* Mobile-specific image */
     }
 
     .bb-carousel-item-1{
-        background-image: url('../images/events/content/m-family-event_1.jpg'); /* Mobile-specific image */
+        background-image: url('../images/events/content/m-books-and-books_1.png'); /* Mobile-specific image */
     }
     .bb-carousel-item-2{
-        background-image: url('../images/events/content/m-family-event_2.jpg'); /* Mobile-specific image */
+        background-image: url('../images/events/content/m-books-and-books_2.png'); /* Mobile-specific image */
     }
     .bb-carousel-item-3{
-        background-image: url('../images/events/content/m-family-event_3.jpg'); /* Mobile-specific image */
+        background-image: url('../images/events/content/m-books-and-books_3.png'); /* Mobile-specific image */
+    }
+
+    .mr-carousel-item-1{
+        background-image: url('../images/events/content/m-mesa-redonda_1.png'); /* Mobile-specific image */
+    }
+    .mr-carousel-item-2{
+        background-image: url('../images/events/content/m-mesa-redonda_2.png'); /* Mobile-specific image */
+    }
+    .mr-carousel-item-3{
+        background-image: url('../images/events/content/m-mesa-redonda_3.png'); /* Mobile-specific image */
     }
 
     .aj-carousel-item-1{
-        background-image: url('../images/events/content/m-un-artiste_1.jpg');;
+        background-image: url('../images/events/content/m-un-artiste_1.jpg');
     }
     .aj-carousel-item-2{
-        background-image: url('../images/events/content/m-un-artiste_2.jpg');;
+        background-image: url('../images/events/content/m-un-artiste_2.jpg');
     }
     .aj-carousel-item-3{
-        background-image: url('../images/events/content/m-un-artiste_3.jpg');;
+        background-image: url('../images/events/content/m-un-artiste_3.jpg');
     }
     .ml-carousel-item-1{
-      background-image: url('../images/events/content/m-mar-de-letras_1.jpg');;
+      background-image: url('../images/events/content/m-mar-de-letras_1.jpg');
     }
     .ml-carousel-item-2{
-      background-image: url('../images/events/content/m-mar-de-letras_2.jpg');;
+      background-image: url('../images/events/content/m-mar-de-letras_2.jpg');
     }
     .ml-carousel-item-3{
-      background-image: url('../images/events/content/m-mar-de-letras_3.jpg');;
+      background-image: url('../images/events/content/m-mar-de-letras_3.jpg');
     }
     .ba-carousel-item-1{
-      background-image: url('../images/events/content/m-bedford-amy_1.jpg');;
+      background-image: url('../images/events/content/m-bedford-amy_1.jpg');
     }
     .ba-carousel-item-2{
-      background-image: url('../images/events/content/m-bedford-amy_2.jpg');;
+      background-image: url('../images/events/content/m-bedford-amy_2.jpg');
     }
     .ba-carousel-item-3{
-      background-image: url('../images/events/content/m-bedford-amy_3.jpg');;
+      background-image: url('../images/events/content/m-bedford-amy_3.jpg');
     }
 }
 
