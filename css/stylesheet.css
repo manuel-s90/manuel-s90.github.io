@@ -171,8 +171,15 @@ h1{
 }
 .real-story{
   color: white;
-  margin: 60px 0 0;
+  margin-top: 60px;
   padding: 80px 0;
+  padding: 60px 20px;
+}
+.real-story h1{
+  text-align: left;
+}
+.real-story p{
+  text-align: left;
 }
 .real-story .row{
   align-items: center;
@@ -197,12 +204,180 @@ h1{
   padding: 40px 0 80px;
   margin-bottom: 40px;
 }
-.events h1, .events-top h1{
-  text-align: center;
+.events h1{
+  text-align: left;
   color: #203877;
+}
+.card-img-custom {
+  width: 180px;          /* Fija el ancho de la imagen a 180px */
+  height: 100%;          /* Ajusta la altura de la imagen al 100% del contenedor padre */
+  object-fit: cover;     /* Cubre el área del contenedor sin distorsionar la imagen */
+  object-position: center; /* Centra la imagen en el contenedor */
+}
+.card-date{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: #203877 !important;
+  font-size: 32px;
+  margin-bottom: -3.5px;
+}
+.card-month{
+  color: #203877;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+.card-text{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #203877;
+  margin-top: 24px;
+}
+.card-text a{
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #203877;
+  padding-right: 4px;
+}
+.card-text a:hover{
+  color: #A0A0A0;
+}
+.location-icon{
+    width: 12px;
+    margin-bottom: 4px;
+}
+.secondary-tag{
+    background-color: white;
+    border: 1px solid #203877;
+    border-radius: 20px;
+    color: #203877;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+}
+.secondary-tag:hover{
+  border: 1px solid #203877;
+  background-color: #f6f6f6;
+}
+.btn-primary{
+  background-color: #203877;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  color: white;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: underline;
+}
+.btn-primary:hover{
+  background-color: #A0A0A0;
+  border: 1px solid transparent;
+}
+.social-btn{
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  text-decoration: underline;
+}
+.social-btn:hover{
+  background-color: transparent;
+  color: #A0A0A0;
+  border: 1px solid #A0A0A0;;
+}
+.carousel-item .d-flex {
+  display: flex;
+  justify-content: space-around; /* Distribuye el espacio alrededor de las tarjetas */
+  width: 100%; /* Ajusta el ancho del contenedor para adaptarse a las tarjetas */
+  transition: transform 0.5s ease;
+}
+.card.mb-3 {
+  flex: 0 0 calc(50% - 30px); /* Ajusta el ancho de cada tarjeta para que dos tarjetas se ajusten dentro del carrusel, considerando el espacio */
+  margin: 15px; /* Asegura que haya un espacio alrededor de las tarjetas */
+}
+.card {
+  border: 0;
+  box-shadow: -1px -1px 10px 4px rgba(69,69,69,0.1);
+  -webkit-box-shadow: -1px -1px 10px 4px rgba(69,69,69,0.1);
+  -moz-box-shadow: -1px -1px 10px 4px rgba(69,69,69,0.1);
+  --bs-card-title-spacer-y: 0rem;
+}
+.more-card{
+  background: #203777;
+  padding: 16px 20px;
+  max-height: 210px;
+}
+.more-card h3{
+  font-family: 'Roboto';
+  color: white;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.more-card p{
+  color: white;
+  text-transform: none;
+  font-weight: 300;
+  margin-top: 12px;
+}
+#eventsCarouselPast, #eventsCarouselUpcoming {
+  position: relative;
+}
+#eventsCarouselPast .carousel-control-prev,
+#eventsCarouselPast .carousel-control-next {
+  position: absolute;
+  top: 50%; /* Centra las flechas verticalmente */
+  transform: translateY(-50%); /* Asegura un centrado preciso */
+  width: auto; /* Permite ajustar el tamaño si es necesario */
+  height: auto; /* Permite ajustar el tamaño si es necesario */
+}
+#eventsCarouselUpcoming .carousel-control-prev,
+#eventsCarouselUpcoming .carousel-control-next {
+  position: absolute;
+  top: 50%; /* Centra las flechas verticalmente */
+  transform: translateY(-50%); /* Asegura un centrado preciso */
+  width: auto; /* Permite ajustar el tamaño si es necesario */
+  height: auto; /* Permite ajustar el tamaño si es necesario */
+}
+#eventsCarouselPast .carousel-control-prev {
+  left: -50px; /* Ajusta según sea necesario para mover la flecha fuera del carrusel a la izquierda */
+}
+#eventsCarouselPast .carousel-control-next {
+  right: -50px; /* Ajusta según sea necesario para mover la flecha fuera del carrusel a la derecha */
+}
+#eventsCarouselUpcoming .carousel-control-prev {
+  left: -50px; /* Ajusta según sea necesario para mover la flecha fuera del carrusel a la izquierda */
+}
+#eventsCarouselUpcoming .carousel-control-next {
+  right: -50px; /* Ajusta según sea necesario para mover la flecha fuera del carrusel a la derecha */
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1); /* Cambia las flechas a negro, ajuste previo */
+}
+.btn-custom {
+  background-color: #007bff; /* Color de fondo */
+  color: white; /* Color del texto */
+  border: none; /* Elimina el borde */
+  padding: 10px 20px; /* Añade padding */
+  margin-top: 15px; /* Espacio por encima del botón */
+  border-radius: 5px; /* Redondea las esquinas */
+}
+.btn-custom:hover {
+  background-color: #0056b3; /* Color de fondo al pasar el ratón */
+  color: #fff; /* Color del texto al pasar el ratón */
 }
 .events-wrapper{
   margin-top: 20px;
+}
+.past-events{
+  margin-top: 40px;
 }
 .event-card{
   border: 1px solid #203877;
@@ -342,6 +517,251 @@ footer a:hover{
 .footer-closure .align-right p{
   text-align: right;
 }
+
+/*BLOG TEMPLATE*/
+.blog-hero{
+  padding: 20px 0 40px;
+}
+.blog-title{
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+  margin-bottom: 0px;
+}
+.blog-details{
+  display: flex;
+}
+.blog-details p{
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 14px;
+  color: white;
+  padding-right: 8px;
+}
+.blog-carousel-item {
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+}
+/* Default background images for desktop */
+/*Family Event*/
+.carousel-item-1{
+  background-image: url('../images/events/content/family-event_2.png');
+}
+.carousel-item-2{
+    background-image: url('../images/events/content/family-event_1.png');
+}
+.carousel-item-3{
+    background-image: url('../images/events/content/family-event_3.png');
+}
+/*Books and Books*/
+.bb-carousel-item-1{
+  background-image: url('../images/events/content/books-and-books_1.png');
+}
+.bb-carousel-item-2{
+    background-image: url('../images/events/content/books-and-books_2.png');
+}
+.bb-carousel-item-3{
+    background-image: url('../images/events/content/books-and-books_3.png');
+}
+
+.mr-carousel-item-1{
+    background-image: url('../images/events/content/mesa-redonda_1.png'); /* Mobile-specific image */
+}
+.mr-carousel-item-2{
+    background-image: url('../images/events/content/mesa-redonda_2.png'); /* Mobile-specific image */
+}
+.mr-carousel-item-3{
+    background-image: url('../images/events/content/mesa-redonda_3.png'); /* Mobile-specific image */
+}
+
+.aj-carousel-item-1{
+  background-image: url('../images/events/content/un-artiste_1.jpg');;
+}
+.aj-carousel-item-2{
+  background-image: url('../images/events/content/un-artiste_2.jpg');;
+}
+.aj-carousel-item-3{
+  background-image: url('../images/events/content/un-artiste_3.jpg');;
+}
+
+.ml-carousel-item-1{
+  background-image: url('../images/events/content/mar-de-letras_1.jpg');;
+}
+.ml-carousel-item-2{
+  background-image: url('../images/events/content/mar-de-letras_2.jpg');;
+}
+.ml-carousel-item-3{
+  background-image: url('../images/events/content/mar-de-letras_3.jpg');;
+}
+
+.ba-carousel-item-1{
+  background-image: url('../images/events/content/bedford-amy_1.jpg');;
+}
+.ba-carousel-item-2{
+  background-image: url('../images/events/content/bedford-amy_2.jpg');;
+}
+.ba-carousel-item-3{
+  background-image: url('../images/events/content/bedford-amy_3.jpg');;
+}
+.carousel-control-prev, .carousel-control-next {
+    width: 5%; /* Increase hit area if needed, might push arrows outside slightly */
+}
+.carousel-indicators button {
+    width: 10px!important;
+    height: 10px!important;
+    border-radius: 50%;
+}
+.carousel-indicators .active {
+    background-color: #fff; /* Active dot color, change as needed */
+}
+.breadcrumbs{
+  font-family: 'Roboto';
+  font-size: 14px;
+  color: white;
+  margin-bottom: -10px;
+}
+.breadcrumbs a{
+  color: white;
+}
+.breadcrumbs a:hover{
+  color: #a0a0a0;
+}
+.blog-content{
+  align-items: center;
+  padding: 80px 0 40px;
+}
+.blog-content p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+.content-quote{
+  text-align: center;
+  font-family: 'Alice', serif;
+}
+.content-quote h2{
+  font-size: 42px;
+  text-transform: uppercase;
+  line-height: 1;
+  padding: 0 40px;
+}
+.content-quote h4{
+  font-size: 20px;
+  padding: 0 60px;
+}
+.blog-gallery{
+  padding: 60px 0;
+}
+.blog-gallery img{
+  max-width: 100%;
+}
+.blog-quote{
+  text-align: center;
+  padding: 0 0 80px;
+}
+.blog-quote p{
+  max-width: 740px;
+  margin: 0 auto;
+  font-family: 'Alice', serif;
+  font-size: 28px;
+  line-height: 1.15;
+}
+.blog-quote mark{
+  background-color: #FDF322;
+}
+.no-final{
+  padding: 0 0 20px;
+}
+.blog-content-final{
+  padding-bottom: 20px;
+}
+.blog-content-final .col-md-6 {
+  display: flex;
+  justify-content: center; /* Centers the content horizontally */
+  align-items: center; /* Centers the content vertically */
+}
+.blog-content-final p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  width: 70%; /* Ensures the paragraph takes up 80% of its parent's width */
+  margin: 0 auto; /* Centers the paragraph horizontally within the column */
+  text-align: justify; /* Justifies the text within the paragraph */
+}
+.blog-links{
+  text-align: center;
+  padding: 40px 0;
+}
+.blog-links h4{
+  font-family: 'Archivo', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #203877;
+}
+.blog-links a{
+  font-family: 'Arimo', sans-serif;
+  font-size: 16px;
+  color: #203877;
+}
+.blog-next{
+  padding-bottom: 60px;
+}
+.blog-next h1{
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 38px;
+  color: #203877;
+}
+.blog-next h4{
+  font-family: 'Archivo';
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #203877;
+  font-weight: 600;
+}
+.blog-next h6{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #A0A0A0;
+  margin-bottom: 24px;
+}
+.blog-next .col-md-2{
+  align-content: center;
+  text-align: right;
+}
+.next-info{
+  align-content: space-around;
+}
+.next-arrow {
+  display: inline-flex; /* Use flex to center the content inside */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: right; /* Align the flex container to the right */
+  padding: 12px; /* Space between the icon and the circle's edge */
+  border-radius: 50%; /* Makes the border a circle */
+  background-color: rgba(32, 56, 119, 0.1); /* Semi-transparent blue using rgba */
+  width: 64px; /* Total width after accounting for padding */
+  height: 64px; /* Total height after accounting for padding */
+  box-sizing: border-box; /* Includes padding in the width/height calculations */
+  transition: background-color 0.3s ease;
+}
+.next-arrow:hover {
+    background-color: rgba(160, 160, 160, 0.4); /* Changes background to semi-transparent gray on hover */
+}
+.next-arrow span {
+    display: flex; /* Ensures the img is centered inside the span if needed */
+}
+.next-arrow img {
+    display: block; /* Removes any default inline spacing below the image */
+}
+.blog-next a{
+  padding: 6px 12px;
+}
+.blog-next img{
+  max-width: 100%;
+}
+
 /*MEDIA QUERIES FOR MOBILE*/
 @media only screen and (min-width: 1400px){
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
@@ -397,12 +817,6 @@ footer a:hover{
   .review-pinned{
     padding: 60px 0 0;
   }
-  .real-story{
-    padding: 60px 20px;
-  }
-  .real-story .row .story{
-    padding: 0px 20px;
-  }
   footer{
     border-radius: 0;
   }
@@ -419,7 +833,7 @@ footer a:hover{
   }
 }
 @media only screen and (max-width: 768px){
-/* UPCOMING EVENTS */
+  /* UPCOMING EVENTS */
   .col-md-8{
     padding-right: 25px!important;
     padding-left: 25px!important;
@@ -430,6 +844,80 @@ footer a:hover{
   .col-md-4 .event-card h3 {
     margin-top: 0px;
   }
+  /* BLOG */
+  .content-quote{
+    margin-bottom: 10px;
+  }
+  .blog-content {
+    padding: 40px 0 0;
+  }
+  .blog-gallery {
+    padding: 0 0 40px;
+  }
+  .blog-gallery .col-md-4{
+    margin-bottom: 20px;
+  }
+  /*Media Queries for Blog*/
+    .blog-header{
+        padding: 0 12px;
+    }
+    .carousel-item-1{
+        background-image: url('../images/events/content/m-family-event_1.png'); /* Mobile-specific image */
+    }
+    .carousel-item-2{
+        background-image: url('../images/events/content/m-family-event_2.png'); /* Mobile-specific image */
+    }
+    .carousel-item-3{
+        background-image: url('../images/events/content/m-family-event_3.png'); /* Mobile-specific image */
+    }
+
+    .bb-carousel-item-1{
+        background-image: url('../images/events/content/m-books-and-books_1.png'); /* Mobile-specific image */
+    }
+    .bb-carousel-item-2{
+        background-image: url('../images/events/content/m-books-and-books_2.png'); /* Mobile-specific image */
+    }
+    .bb-carousel-item-3{
+        background-image: url('../images/events/content/m-books-and-books_3.png'); /* Mobile-specific image */
+    }
+
+    .mr-carousel-item-1{
+        background-image: url('../images/events/content/m-mesa-redonda_1.png'); /* Mobile-specific image */
+    }
+    .mr-carousel-item-2{
+        background-image: url('../images/events/content/m-mesa-redonda_2.png'); /* Mobile-specific image */
+    }
+    .mr-carousel-item-3{
+        background-image: url('../images/events/content/m-mesa-redonda_3.png'); /* Mobile-specific image */
+    }
+
+    .aj-carousel-item-1{
+        background-image: url('../images/events/content/m-un-artiste_1.jpg');
+    }
+    .aj-carousel-item-2{
+        background-image: url('../images/events/content/m-un-artiste_2.jpg');
+    }
+    .aj-carousel-item-3{
+        background-image: url('../images/events/content/m-un-artiste_3.jpg');
+    }
+    .ml-carousel-item-1{
+      background-image: url('../images/events/content/m-mar-de-letras_1.jpg');
+    }
+    .ml-carousel-item-2{
+      background-image: url('../images/events/content/m-mar-de-letras_2.jpg');
+    }
+    .ml-carousel-item-3{
+      background-image: url('../images/events/content/m-mar-de-letras_3.jpg');
+    }
+    .ba-carousel-item-1{
+      background-image: url('../images/events/content/m-bedford-amy_1.jpg');
+    }
+    .ba-carousel-item-2{
+      background-image: url('../images/events/content/m-bedford-amy_2.jpg');
+    }
+    .ba-carousel-item-3{
+      background-image: url('../images/events/content/m-bedford-amy_3.jpg');
+    }
 }
 
 /*BOOK ANIMATION HOVER*/
